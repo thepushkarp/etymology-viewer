@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 import ety
-from pprint import pprint
 
 app = Flask(__name__)
 
