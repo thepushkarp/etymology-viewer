@@ -25,7 +25,7 @@ function toText(arr) {
 
 $(document).ready(function () {
     $("form").on("submit", function (event) {
-        word = $("#textInput").val();
+        word = $("#textInput").val().toLowerCase();
         option = $("input:radio[name=searchOption]:checked").val();
         if (option !== "3") {
             recursive = option === "2" ? "True" : "False";
