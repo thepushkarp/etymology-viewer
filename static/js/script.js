@@ -1,3 +1,4 @@
+// Function taken from: https://stackoverflow.com/questions/65488166/printing-a-json-object-in-hierarchical-tree-format
 function toText(arr) {
     const recur = ({ Item, Children }) =>
         Item?.Name +
@@ -19,7 +20,6 @@ function toText(arr) {
                   )
                   .join("\n")
             : "");
-    console.log(arr.map(recur).join("\n"));
     return arr.map(recur).join("\n");
 }
 
@@ -38,7 +38,7 @@ $(document).ready(function () {
                     $("#results").html("<h2>No result found :(</h2>");
                 } else {
                     results = `<h2>${data.length} origin words found for ${word}</h2>`;
-                    results += `<ul style="list-style: none;">\n`;
+                    results += `<ul">\n`;
                     data.forEach((datum) => {
                         results += `<li><u>${datum}</u></li>\n`;
                     });
