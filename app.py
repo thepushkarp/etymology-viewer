@@ -1,13 +1,27 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import ety
 
 app = Flask(__name__)
 
 
+def replace_item(obj):
+    new_obj = {}
+    for k, v in obj.items():
+        new_obj["Item"] = {"Name": k}
+        new_obj["Children"] = []
+        for value in v["children"]:
+            if isinstance(value, dict):
+                new_obj["Children"].append(replace_item(value))
+            else:
+                new_obj["Children"].append({"Item": {"Name": value}})
+    print(new_obj)
+    return new_obj
+
+
 # Default route
 @app.route("/")
 def home():
-    return "Etymology Viewer Backend"
+    return render_template("index.html")
 
 
 # Gets the origin of a word
@@ -29,6 +43,7 @@ def origin(word: str = ""):
 def tree(word: str = ""):
     try:
         response = ety.tree(word).to_dict()
+        response = [replace_item(response)]
         return jsonify(response)
     except:
         return jsonify({})
