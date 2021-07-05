@@ -25,8 +25,8 @@ def home():
 
 
 # Gets the origin of a word
-@app.get("/origin/")
-@app.get("/origin/<string:word>")
+@app.route("/origin/", methods=["GET"])
+@app.route("/origin/<string:word>", methods=["GET"])
 def origin(word: str = ""):
     try:
         recursive = request.args.get("recursive") == "True"
@@ -38,8 +38,8 @@ def origin(word: str = ""):
 
 
 # Gets the etymological tree of a word
-@app.get("/tree/")
-@app.get("/tree/<string:word>")
+@app.route("/tree/", methods=["GET"])
+@app.route("/tree/<string:word>", methods=["GET"])
 def tree(word: str = ""):
     try:
         response = ety.tree(word).to_dict()
