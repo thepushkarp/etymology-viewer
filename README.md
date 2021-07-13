@@ -29,6 +29,10 @@ Enter a word in the text box to search its origin.There are three options from w
 
 Check [Logophilia](https://logophilia.in/) to know about words and the etymology behind them. It's an extremely fun way to learn words!
 
+## Disclaimer
+
+There isn't a single source of truth for etymologies; words' origins can be heavily disputed. This websites fetches data from [ety-python](https://github.com/jmsv/ety-python), whose source data is mostly mined from Wiktionary.
+
 <small>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small>.
 
 ---
