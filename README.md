@@ -37,4 +37,13 @@ There isn't a single source of truth for etymologies; words' origins can be heav
 
 ---
 
-<p align="center"> Made with ❤️ by <a href="https://github.com/thepushkarp">Pushkar Patel</a> </p>
+<p align="center">
+  <a href="https://github.com/thepushkarp/etymology-viewer" target="_blank" rel="noopener noreferrer">
+    Etymology Viewer
+  </a>
+  made with ❤️ by
+  <a href="https://github.com/thepushkarp">
+    Pushkar  Patel
+  </a>
+</p>
+
