@@ -1,5 +1,5 @@
 > [!WARNING]
-> **Maintenance Notice**: This repository is archived and is no longer under active maintenance. Please use [`thepushkarp/etymology-explorer`](https://github.com/thepushkarp/etymology-explorer) (hosted at https://etymology.thepushkarp.com/) as the spiritual successor to this project instead.
+> **Maintenance Notice**: This repository is archived and is no longer under active maintenance. Please use [`thepushkarp/etymology-explorer`](https://github.com/thepushkarp/etymology-explorer) (hosted at http://etymex.com/) as the spiritual successor to this project instead.
 
 <p align="center"><img alt="Etymology Viewer" src="static/search.png" width="200"></p>
 
